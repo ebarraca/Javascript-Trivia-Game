@@ -11,54 +11,44 @@ h1 {
   text-align: center;
   font-family: 'Rubik', sans-serif;
   font-size:44px;
+}
 
-  }
-
-  #start {
-    width: 220px;
-    height: 50px;
-    text-align: center;
-    margin-left: 200px;
-    vertical-align: center; 
-    padding-top: 10px; 
-    font-size: 30px;
-    margin-bottom: 40px;
-    font-family: 'Rubik', sans-serif;
-    background-color: white;
-
-  }
+#start {
+  width: 220px;
+  height: 50px;
+  text-align: center;
+  margin-left: 200px;
+  vertical-align: center; 
+  padding-top: 10px; 
+  font-size: 30px;
+  margin-bottom: 40px;
+  font-family: 'Rubik', sans-serif;
+  background-color: white;
+}
 
 input.radio {
   float: left;
   clear: none;
   margin: 2px 0 0 2px;
-  color:red;
 }
 
 
 #quiz {
   font-size: 22px;
   font-family: 'Rubik', sans-serif;
-
-
 }
-/*
-form {
-  background-color:white;
 
-}*/
 .buttonlabel {
-    font-size: 16px;
-    max-width: 100%;
-    display: inline-block;
-    margin-left: 5px;
-    margin-bottom: 30px;
-    margin-right: 10px;
-
+  font-size: 16px;
+  max-width: 100%;
+  display: inline-block;
+  margin-left: 5px;
+  margin-bottom: 30px;
+  margin-right: 10px;
 }
 
 input.choice {
-margin: 5px;
+  margin: 5px;
 }
 
 img {
@@ -70,50 +60,23 @@ body{
 }
 
 #submit {
-  margin-top: 30px;
   margin-left: 220px;
   width: 130px;
   height: 30px;
   background-color: white;
   text-align: center;
   padding: 10px;
-
 }
 
 #score {
-text-align:center;
+  text-align:center;
 }
-
-/*#quiz:empty {
-    width: 100px;
-    height: 20px;
-    background: #ff0000;
-}*/
-
-/*input {
-
-
-  border-radius: 50%;
-  width: 16px;
-  height: 16px;
-
-  border: 2px solid #999;
-  transition: 0.2s all linear;
-  outline: none;
-  margin-right: 5px;
-
-  /*position: relative;*/
-/*  top: 4px;
-}*/
 
 #question {
   font-weight: bold;
 }
 
-#start.empty{
-  width: 0px;
-  height: 0px;
-}
+
 
 
 

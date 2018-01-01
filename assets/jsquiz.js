@@ -32,18 +32,42 @@ $(document).ready(function() {
           question: "5. Lemmy died at what age?",
           choices: ["65", "70", "75",],
           answer: 1
-        }       
+        },
+        {
+          question: "6. Finish this lyric. Born to lose, ...",
+          choices: ["Live to Win", "Live to Quit", "Live and Let Die",],
+          answer: 0
+        },
+        {
+          question: "7. Motorhead's logo is known as?",
+          choices: ["Leopard", "Snaggletooth", "Knight",],
+          answer: 1
+        },
+        {
+          question: "8. Lemmy officially launched Motorhead in what year?",
+          choices: ["1975", "1977", "1982",],
+          answer: 0
+        }
+
+
       ];
 
     
-      //Define functions
+  //Define functions
     function timer(){
         count=count-1;
         elem1.innerHTML= count + ' seconds'; //Update span inner HTML
         if (count <= 0){
-            clearInterval(counter);
-            //counter ended, TIMES UP - HERES YOUR SCORE
-            // alert ("Times Up! You scored '+score+' out of '+total'");
+
+        $('#start').hide();
+        scoreAnswers();
+            // console.log("score: ", score);
+        $('#quiz').empty();
+        $('#submit').hide();
+        $('#quiz').append("<div id='score'></div>");
+        $("#score").text('All done! You got ' + score + ' right!');
+        clearInterval(counter);
+            //when counter ends, score div appears
         }
     }
 
@@ -94,13 +118,14 @@ $(document).ready(function() {
          //onclick submit button - div with score appears
         
         $("#submit").click(function(){
-            $('#start').empty();
+            $('#start').hide();
             scoreAnswers();
-            console.log("score: ", score);
+            // console.log("score: ", score);
             $('#quiz').empty();
             $('#submit').hide();
             $('#quiz').append("<div id='score'></div>");
-            $("#score").text('All done! You got ' + score + ' right');
+            $("#score").text('All done! You got ' + score + ' right!');
+            
             //timer needs to stop!
             clearInterval(counter);
         });
